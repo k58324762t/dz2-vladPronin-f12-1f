@@ -11,13 +11,13 @@ function MainPage() {
 		dispatch(clearName(' '))
 	}
 
-	const onchageInput = e => {
+	const onchangInput = e => {
 		dispatch(addName(e.target.value))
 	}
 
 	return (
 		<div>
-			<input type='text' onChange={onchageInput} value={name} />
+			<input type='text' onChange={onchangInput} value={name} />
 			<button onClick={creatUser}> </button>
 			<lu>
 				{name.map((user, key) => {
